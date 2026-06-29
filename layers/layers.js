@@ -102,31 +102,31 @@ var resoluciones = { maxResolution: 14.282277737653603, minResolution: 0.0002800
 var lyr_Bueno = new ol.layer.Vector({
     declutter: false, source: source_Bueno, style: estiloGrupoConservacion, interactive: true,
     maxResolution: resoluciones.maxResolution, minResolution: resoluciones.minResolution,
-    popuplayertitle: 'Numeración Esgos', title: '<img src="styles/legend/ECONS_BUENO.png" /> Bueno'
+    popuplayertitle: 'Numeración Oimbra', title: '<img src="styles/legend/ECONS_BUENO.png" /> Bueno'
 });
 
 var lyr_Regular = new ol.layer.Vector({
     declutter: false, source: source_Regular, style: estiloGrupoConservacion, interactive: true,
     maxResolution: resoluciones.maxResolution, minResolution: resoluciones.minResolution,
-    popuplayertitle: 'Numeración Esgos', title: '<img src="styles/legend/ECONS_REGULAR.png" /> Regular'
+    popuplayertitle: 'Numeración Oimbra', title: '<img src="styles/legend/ECONS_REGULAR.png" /> Regular'
 });
 
 var lyr_Malo = new ol.layer.Vector({
     declutter: false, source: source_Malo, style: estiloGrupoConservacion, interactive: true,
     maxResolution: resoluciones.maxResolution, minResolution: resoluciones.minResolution,
-    popuplayertitle: 'Numeración Esgos', title: '<img src="styles/legend/ECONS_MALO.png" /> Malo'
+    popuplayertitle: 'Numeración Oimbra', title: '<img src="styles/legend/ECONS_MALO.png" /> Malo'
 });
 
 var lyr_Ruina = new ol.layer.Vector({
     declutter: false, source: source_Ruina, style: estiloGrupoConservacion, interactive: true,
     maxResolution: resoluciones.maxResolution, minResolution: resoluciones.minResolution,
-    popuplayertitle: 'Numeración Esgos', title: '<img src="styles/legend/ECONS_RUINA.png" /> Ruina'
+    popuplayertitle: 'Numeración Oimbra', title: '<img src="styles/legend/ECONS_RUINA.png" /> Ruina'
 });
 
 var lyr_Vacio = new ol.layer.Vector({
     declutter: false, source: source_Vacio, style: estiloGrupoConservacion, interactive: true,
     maxResolution: resoluciones.maxResolution, minResolution: resoluciones.minResolution,
-    popuplayertitle: 'Numeración Esgos', title: '<img src="styles/legend/ECONS_VACIO.png" /> Sin definir'
+    popuplayertitle: 'Numeración Oimbra', title: '<img src="styles/legend/ECONS_VACIO.png" /> Sin definir'
 });
 
 var group_Eib_ECons = new ol.layer.Group({
@@ -146,7 +146,7 @@ var lyr_Tipo = new ol.layer.Vector({
     interactive: true,
     maxResolution: resoluciones.maxResolution, 
     minResolution: resoluciones.minResolution,
-    popuplayertitle: 'Numeración Esgos', 
+    popuplayertitle: 'Numeración Oimbra', 
     title: '<img src="styles/legend/ECONS_VACIO.png" /> Numeración'
 });
 
@@ -254,7 +254,7 @@ var lyr_Eib_Lugares_0 = new ol.layer.Vector({
     declutter: false,
     source: jsonSource_Eib_Lugares_0, 
     style: style_Eib_Lugares_0,
-    popuplayertitle: 'Vías/Lugares Esgos',
+    popuplayertitle: 'Vías/Lugares Oimbra',
     interactive: true,
     opacity: 0.50000,
     title: 'Núcleos<br />'
@@ -287,14 +287,14 @@ group_Eib_ECons.setVisible(false); group_Eib_Tipo.setVisible(true); // Tipo arra
 // =========================================================================
 // GRUPO MAESTRO DEL MUNICIPIO (SIN CHECKBOX TOTAL)
 // =========================================================================
-var group_Municipio_Esgos = new ol.layer.Group({
+var group_Municipio_Oimbra = new ol.layer.Group({
     layers: [group_Varios, group_Eib_ECons, group_Eib_Tipo, group_Nucleos_y_Ejes],
     fold: 'open', // 'open' para que arranque abierto, 'close' para que arranque cerrado
-    title: '<span class="titulo-municipio-cabecera">MUNICIPIO DE ESGOS</span>'
+    title: '<span class="titulo-municipio-cabecera">MUNICIPIO DE OIMBRA</span>'
 });
 
 // Pasamos únicamente el grupo maestro a la lista oficial de capas
-var layersList = [group_Municipio_Esgos];
+var layersList = [group_Municipio_Oimbra];
 
 // Inyectamos dinámicamente el estilo CSS para hacer desaparecer el checkbox
 var estiloMenu = document.createElement('style');
