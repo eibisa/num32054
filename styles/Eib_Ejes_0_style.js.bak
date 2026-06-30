@@ -1590,19 +1590,8 @@ case '5096':
                               bufferWidth)
     })];
                     break;
-case '5097':
-                    return [ new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(0,0,0,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 7.827999999999999}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    }),new ol.style.Style({
-        stroke: new ol.style.Stroke({color: 'rgba(43,251,32,1.0)', lineDash: null, lineCap: 'round', lineJoin: 'round', width: 5.548}),
-        text: createTextStyle(feature, resolution, labelText, labelFont,
-                              labelFill, placement, bufferColor,
-                              bufferWidth)
-    })];
-                    break;}};
+
+
 
 
 
